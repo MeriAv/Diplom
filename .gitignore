@@ -43,3 +43,7 @@ out/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+/.idea/
+/.allure/
+/build (2)/
+.allure
