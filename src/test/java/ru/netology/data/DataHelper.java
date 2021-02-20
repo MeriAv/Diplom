@@ -169,4 +169,13 @@ public class DataHelper {
         String cvv = faker.number().digits(3);
         return new Card("4444444444444441", month, year, holder, cvv);
     }
+
+    public static Card getCardMath0() {
+        Faker faker = new Faker();
+        String holder = faker.name().firstName() + " %$ * &";
+        String month = getShiftedMonth(0);
+        String year = getShiftedYear(1);
+        String cvv = faker.number().digits(3);
+        return new Card("4444444444444441", month, year, holder, cvv);
+    }
 }
